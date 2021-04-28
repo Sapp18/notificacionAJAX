@@ -1,0 +1,114 @@
+/*Código tomado de la página*/
+:root {
+    --primary: #007bff;
+    --light: #f8f9fa;
+}
+header {
+    width: 100%;
+    background: linear-gradient(to right, #3C426F, #5c8ab4);
+    height: 58px;
+    z-index: 100;
+    position: fixed;
+    font-family: lo;
+    color: white;
+    overflow: hidden;
+    padding-top: 0.5px;
+}
+nav {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    position: fixed;
+    z-index: 3;
+    color: #0a0a0a;
+    border-bottom: 1.5px solid #dbdbdb;
+    top: 58px;
+    text-align: center;
+    overflow: hidden;
+}
+nav ul {
+    margin: auto;
+    font-size: 19px;
+    position: relative;
+    display: inline-block;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    color: #0a0a0a;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 0rem 2rem;
+    line-height: 2.5rem;
+    color: #0a0a0a;
+    font-size: 14px;
+    font-weight: bolder;   
+}
+
+/*Código btn notificacion*/
+.navigation-menu {
+    align-items: center;
+    min-height: 3.5rem;
+}
+.navigation-menu a {
+    margin-left: 10px;
+    padding: 12px 20px;
+    transition: .3s linear;
+}
+.navigation-menu a:hover {
+    border-radius: 15rem;
+    background: var(--light);
+    color: var(--primary);
+    transform: scale(1.3);
+}
+.menu-toggle-btn {
+    height: 20px;
+}
+.submenu{
+    position: fixed;
+    max-width: 200px;
+    background: var(--light);
+    top: 90px;
+    right: 0;
+    display: none;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.submenu a:hover{
+    border-radius: 1rem;
+    background: var(--primary);
+    transform: scale(1);
+    color: var(--light);
+    font-size: 1rem;
+    
+}
+.size{
+    font-size: 5rem;
+}
+.submenu::before{
+    content: "Solicitudes";
+    border-left: 60px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 1px solid var(--primary);
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    right: 10px;
+}
+.submenu a{
+    display: block;
+    margin: 5px 0;
+}
+.submenu.active{
+    display: block;
+    right: 50px;
+}
+#global {
+	height: 70%;
+	border: 1px solid #ddd;
+	background: var(--light);
+	overflow-y: scroll;
+}
