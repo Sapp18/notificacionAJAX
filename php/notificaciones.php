@@ -16,7 +16,7 @@ while($row=mysqli_fetch_array($result)) {
 	$fechaFormateada = date("d-m-Y", strtotime($fechaOriginal));
 
 	$response = $response . "<div class='notification-item'>" .
-	"<div class='notification-subject'>". $row["nombre"] . " - <span>". $fechaFormateada . "</span> </div>" . 
+	"<div class='notification-subject'>"."<span>Usuario: </span>". $row["nombre"] . " <br> <span>Fecha: </span>". $fechaFormateada . "</div>" . 
 	// "<div class='notification-comment'>" . $row["visto"]  . "</div>" .
 	"</div>";
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,100;1,200;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/684cf6df5c.js" crossorigin="anonymous"></script>
     <title>Prueba</title>    
     <!--Librerias para el header-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
@@ -41,10 +42,10 @@
             </ul>
             <div class="demo-content">
                     <div id="notification-header">
-                    <div style="position:relative">
-                        <button id="notification-icon" name="button" onclick="myFunction()" class="dropbtn"><span id="notification-count"><?php if($count>0) { echo $count; } ?></span><img src="img/icono.png" /></button>
-                        <div id="notification-latest"></div>
-                    </div>          
+                        <button id="notification-icon" name="button" onclick="myFunction()" class="dropbtn"><span id="notification-count"><?php if($count>0) { echo $count; } ?></span><i class="fas fa-bell" id="icono"></i>
+                        <div id="notification-latest">
+
+                        </div>       
                     </div>
                 </div>
             <?php if(isset($message)) { ?> <div class="error"><?php echo $message; ?></div> <?php } ?>

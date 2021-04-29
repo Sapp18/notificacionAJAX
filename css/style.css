@@ -9,7 +9,6 @@ header {
     height: 58px;
     z-index: 100;
     position: fixed;
-    font-family: lo;
     color: white;
     overflow: hidden;
     padding-top: 0.5px;
@@ -17,15 +16,14 @@ header {
 nav {
     background-color: white;
     width: 100%;
-    height: 40px;
+    height: 60px;
     padding: 0;
-    position: fixed;
     z-index: 3;
     color: #0a0a0a;
     border-bottom: 1.5px solid #dbdbdb;
     top: 58px;
     text-align: center;
-    overflow: hidden;
+    position: absolute;
 }
 nav ul {
     margin: auto;
@@ -43,7 +41,7 @@ nav ul li a {
     display: block;
     padding: 0rem 2rem;
     line-height: 2.5rem;
-    color: #0a0a0a;
+    color: #fff;
     font-size: 14px;
     font-weight: bolder;   
 }
@@ -111,4 +109,73 @@ nav ul li a {
 	border: 1px solid #ddd;
 	background: var(--light);
 	overflow-y: scroll;
+}
+
+#notification-header{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#notification-latest{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(44, 62, 80, 0.465), #bdc3c7);
+    background: linear-gradient(to left, rgba(44, 62, 80, 0.459), #bdc3c7);
+    color: #000;
+    overflow-y: scroll;
+    position: absolute;
+    top: 28px;
+    right: 0px;
+    width: 210px;
+}
+
+.notification-subject{
+    border-bottom: 2px solid white;
+    text-align: left;
+    color: #000;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.notification-subject span{
+    font-weight: bolder;
+}
+
+#notification-count{
+    color: red;
+    font-weight: bold;
+}
+
+#notification-icon{
+  border: none;
+  background-color: #ddd;
+  color: #000;
+}
+
+#notification-icon:hover{
+    background-color: #000;
+    color: #ddd;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #fff; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fff; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #444; 
 }
